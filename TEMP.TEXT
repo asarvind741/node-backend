@@ -1,0 +1,30 @@
+###Redis Download
+
+https://github.com/dmajkic/redis/downloads
+
+Mongoose Performance
+https://medium.com/skyshidigital/6-tricks-to-speed-up-and-improve-your-node-js-performance-fadc06d15cbe
+
+
+###Mongoose Tutorial
+https://mongoosejs.com/docs/guide.html
+
+
+###MogoDB Query Optimization
+
+show dbs
+db
+use database_name
+show collections
+db.getCollectionNames()
+db.collectionName.find().pretty()
+db.users.find({email:"asarvind7assdsdfdds41@gmail.com"}).explain("executionStats")
+Field level Indxing and Schema leval Indexing
+Field Level- index: true
+Schema Level-userSchema.index({ email: 1})
+
+related--
+https://medium.com/skyshidigital/6-tricks-to-speed-up-and-improve-your-node-js-performance-fadc06d15cbe
+
+drop Index- db.collectionName.dropIndex({field_name: 1})
+get Indexes- db.users.getIndexes()
